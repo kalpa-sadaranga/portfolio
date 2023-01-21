@@ -1,0 +1,63 @@
++
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>kalpas personal site</title>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td>
+        <img src="DSC_198aa1a-modified.png"
+      height=200 />
+    </td>
+      <td>
+        <h1>Kalpa Sadaranga</h1>
+        <p><em>Mechanical Engineer at <strong><a href="https://www.kyowa-hearts.com/">Kyowa Hearts</a></strong> </em></p>
+<!--                                     -->
+      </td>
+    </tr>
+  </table>
+  <hr>
+  <h3>Work Experience</h3>
+
+  <table>
+    <tr>
+      <td><strong>Dates</strong></td>
+      <td><strong>Company<strong></td>
+
+    </tr>
+    <tr>
+      <td>2019/8-2019/12</td>
+      <td>Out Sourcing Technonolgy</td>
+
+    </tr>
+      <td>2019/12-2020/7</td>
+      <td>Yazaki Coorporation</td>
+    </tr>
+    <tr>
+      <td>2020/10to Present</td>
+      <td>Kyowa Hearts </td>
+    </tr>
+  </table>
+  <hr>
+  <h3>Skills</h3>
+    <table>
+      <tr>
+        <td>SolidWorks</td>
+        <td>AutoCAD</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+
+    </table>
+<hr>
+  <a href="Contacts.html">Contact Me</a>
+</body>
+
+</html>
