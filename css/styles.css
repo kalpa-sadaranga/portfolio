@@ -1,171 +1,133 @@
-.top-container {
-  background-color: #E4F9F5;
-  position: relative;
-  padding-top: 100px;
-  padding-bottom: 250px;
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family:Montserrat ;
+  
 }
 
-h1 {
-  margin: 50px auto 0 auto;
-  font-family: 'Sacramento', cursive;
-  font-size: 5.625rem;
-  color: #66BFBF;
-  /* line-height: 4; */
+
+#header{
+  width: 100%;
+  height: 100vh;
+  background-image: url(/images/cover-6.png);
+  background-size: cover;
+  background-position: center;
 }
 
-h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2.5rem;
-  color: #66BFBF;
-  font-weight: normal;
-  padding-bottom: 10px;
+.logo{
+  margin-top: 25px;
+  margin-left: 100px;
+  font-size: 5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+
 }
 
-h3 {
-  font-family: 'Montserrat', sans-serif;
-  color:#11999E;
+.profile-picture{
+  height:50%;
+  margin-top: 0px;
+  margin-left: 100px;
+  margin-bottom: 300px;
 }
 
-hr{
-
-  border: none;
-  border-top: 5px dotted  #cdd4d3;    /*here the code i want white dotted line.*/
-  /* color: #EAF6F6; */
-  background-color:  white;
-  width: 3%;
-  margin: 100px auto;
+.container{
+  padding: 0px 20px;
 }
 
-p{
-  line-height: 2;
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  max-width: 10px 20px;
+  margin-right: 25px;
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-weight: 100;
+}
+
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: rgb(20, 1, 1);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover:after{
+  width: 100%;
 }
 
 .intro{
+  display: flex;
+  margin-top: 100px;
+  font-size: 30px;
+  justify-content: space-between;
+}
 
-  width:30%;
-  margin: auto;
+.bio{
+  margin: 50px 200px 50px 100px;
+}
+
+.intro .bio span{
+    color: crimson;
+    font-weight: bold;
+}
+
+#about{
+  padding: 100px 0;
+  color: white;
+  background-image: url(/images/about-me-background.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-1{
+  flex-basis: 35%;
+}
+
+.about-col-1 img{
+  width: 60%;
+  border-radius: 15px;
+  margin: 100px 200px;
+}
+
+.about-col-2{
+  flex-basis: 50%;
+  margin-top: 100px;
+  margin-right: 200px;
 
 }
 
-.pro {
-  text-decoration: underline;
+.about-me-tabs{
+  display: flex;
+  margin: 20px 0 40px;
 }
 
-
-.skill-row{
-   width:40%;
-   margin:100px auto 100px auto;
-   text-align: left;
-   line-height: 2;
-}
-
-
-body {
-  text-align: center;
-  margin: 0;
-  font-family: 'Merriweather', serif;
-  color: #40514E
-}
-
-.top-cloud {
-  position: absolute;
-  right: 300px;
-  top: 50px;
-}
-
-.bottom-cloud {
-  position: absolute;
-  left: 250px;
-  bottom: 300px;
-}
-.middle-container{
-  margin: 80px auto 60px;
-
-}
-
-
-.bottom-container{
-
-  background-color: #66BFBF;
-  color: green;
-  padding: 60px;
-}
-.footer-link{
-  color: #11999E;
-
-}
-a{
-    font-family: 'Montserrat', sans-serif;
-    margin: 10px 20px;
-    text-decoration: none;
-}
-
-a:hover{
-  color: #EAF6F6;
-
-}
-
-.copyright{
-  width:40%;
-  font-size: 0.75rem;
-  color:white;
-    margin: 40px auto 5px;
-}
-
-
-.contact{
-  width: 30%;
-  margin: 30px auto 60px;
-
-
-}
-
-.profile-image{
-  height: 10%;
-  width: 10%;
-
-}
-
-.art-image{
-
- height: 20%;
- width: 20%;
- float: right;
- margin-left: 10px;
-}
-
-.design-devs{
-  height: 20%;
-  width: 20%;
-  float: left;
+.about-me-tab-links{
   margin-right: 50px;
-
-}
-
-.btn {
-  background: #66BFBF;
-  background-image: -webkit-linear-gradient(top, #66BFBF, #2980b9);
-  background-image: -moz-linear-gradient(top, #66BFBF, #2980b9);
-  background-image: -ms-linear-gradient(top, #66BFBF, #2980b9);
-  background-image: -o-linear-gradient(top, #66BFBF, #2980b9);
-  background-image: linear-gradient(to bottom, #66BFBF, #2980b9);
-  -webkit-border-radius: 6;
-  -moz-border-radius: 6;
-  border-radius: 6px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 15px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background: #3cfce2;
-  background-image: -webkit-linear-gradient(top, #3cfce2, #3498db);
-  background-image: -moz-linear-gradient(top, #3cfce2, #3498db);
-  background-image: -ms-linear-gradient(top, #3cfce2, #3498db);
-  background-image: -o-linear-gradient(top, #3cfce2, #3498db);
-  background-image: linear-gradient(to bottom, #3cfce2, #3498db);
-  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
 }
