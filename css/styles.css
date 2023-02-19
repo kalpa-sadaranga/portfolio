@@ -10,7 +10,7 @@
 #header{
   width: 100%;
   height: 100vh;
-  background-image: url(/images/cover-6.png);
+  background-image: url('../images/cover-6.png');
   background-size: cover;
   background-position: center;
 }
@@ -91,7 +91,7 @@ nav ul li a:hover:after{
 #about{
   padding: 100px 0;
   color: white;
-  background-image: url(/images/about-me-background.jpg);
+  background-image: url('../images/about-me-background.jpg');
   width: 100%;
   height: 100vh;
   background-size: cover;
