@@ -45,26 +45,26 @@
         <div class="about-col-2">
           <h1>About Me</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, tempore laudantium unde dolor quod similique tenetur, nulla omnis esse eos iure consequuntur minus impedit! Placeat fuga quam ad dolorum earum!</p>
-          <div class="about-me-tabs">
-            <p class="about-me-tab-links">Skills</p>
-            <p class="about-me-tab-links">Education</p>
-            <p class="about-me-tab-links">Projects</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('projects')">Projects</p>
           </div>
-          <div class="tab-content skills active">
+          <div class="tab-content active-content" id="skills">
             <ul>
               <li><span>UI/UX Design</span><br>Designing Websites/Applications Interfaces</li>
               <li><span>Web Development</span><br>Javascript based developement</li>
               <li><span>App/Games Development</span><br>Development of Web Apps and Online Games</li>
             </ul>
           </div>
-          <div class="tab-content education">
+          <div class="tab-content" id="education">
             <ul>
               <li><span>2019-7</span><br>BSc. Engineering(Hons) in Mechanical Engineering <br>University of Moratuwa, Sri Lanka.</li>
               <li><span>2022-6 to Present</span><br>The Complete 2023 Web Development Bootcamp by Dr. Angela Yu</li>
               <li><span>2022-7 to Present</span><br>Post Graduate Program in Full Stack Development by CAREERERA</li>
             </ul>
           </div>
-          <div class="tab-content projects">
+          <div class="tab-content" id="projects">
             <ul>
               <li><span>tindg</span><br>A responsive dating web site developed by using HTML,CSS <br> and CSS framework Bootsrap.</li>
               <li><span>Web Development</span><br>Javascript based developement</li>
@@ -83,6 +83,25 @@
     <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
     <p class="copyright">© 2022 Kalpa Sadaranga ©The SAK academy. </p>
   </div>
+
+  <script>
+
+    let tablinks=document.getElementsByClassName("tab-links");
+    let tabcontents=document.getElementsByClassName("tab-content");
+
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-content");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-content");
+    }
+  </script>
+  
+
 </body>
 
 </html>
